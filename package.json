@@ -1,0 +1,28 @@
+{
+  "name": "es6skeleton",
+  "version": "1.0.0",
+  "description": "Skeleton for an ES6 application.",
+  "scripts": {
+    
+    "build": "babel src --out-dir .dist",
+    "autobuild": "babel src --out-dir .dist --watch",
+    
+    "test": "mocha $(find .dist/test -name '*.js')",
+    "pretest": "npm run build",
+    
+    "autotest": "mocha $(find .dist/test -name *.js) --watch",
+    "preautotest": "npm run build"
+    
+  },
+  "keywords": [
+    "es6"
+  ],
+  "author": "israel.bgf@gmail.com",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "babel": "^4.6.1",
+    "chai": "^1.10.0",
+    "mocha": "^2.1.0"
+  }
+}
