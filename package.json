@@ -12,12 +12,9 @@
     "autobuild": "babel src --out-dir dist --watch --optional runtime",
     "preautobuild": "npm run clean",
     
-    "test": "cd dist/; mocha",
-    "pretest": "npm run build",
-    
-    "autotest": "cd src/; mocha --watch --require babel/polyfill --compilers js:babel/register",
-    "preautotest": "npm run build"
-    
+    "test": "cd src/; mocha --compilers js:babel/register",
+    "autotest": "cd src/; mocha --compilers js:babel/register --watch"
+
   },
   "keywords": [
     "es6"
