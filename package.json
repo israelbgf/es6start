@@ -3,14 +3,19 @@
   "version": "1.0.0",
   "description": "Skeleton for an ES6 application.",
   "scripts": {
+
+    "clean": "rm -rf dist/",
     
-    "build": "babel src --out-dir .dist",
-    "autobuild": "babel src --out-dir .dist --watch",
+    "build": "babel src --out-dir dist --optional runtime",
+    "prebuild": "npm run clean",
     
-    "test": "mocha $(find .dist/test -name '*.js')",
+    "autobuild": "babel src --out-dir dist --watch --optional runtime",
+    "preautobuild": "npm run clean",
+    
+    "test": "cd dist/; mocha",
     "pretest": "npm run build",
     
-    "autotest": "mocha $(find .dist/test -name *.js) --watch",
+    "autotest": "cd src/; mocha --watch --require babel/polyfill --compilers js:babel/register",
     "preautotest": "npm run build"
     
   },
