@@ -50,7 +50,7 @@ describe('ES6 object literals', () => {
     
     it('should allow properties name to be dinamically generated', () => {
         let object = {
-            [generateName('Foo')]:42
+            [generateName('Foo')]: 42
         };
         function generateName(name) {
             return `property${name}`
