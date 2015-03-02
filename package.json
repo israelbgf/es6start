@@ -3,18 +3,13 @@
   "version": "1.0.0",
   "description": "Skeleton for an ES6 application.",
   "scripts": {
-
-    "clean": "rm -rf dist/",
-    
+    "clean": "rimraf dist/",
     "build": "babel src --out-dir dist --optional runtime",
     "prebuild": "npm run clean",
-    
     "autobuild": "babel src --out-dir dist --watch --optional runtime",
     "preautobuild": "npm run clean",
-    
     "test": "cd src/; mocha --compilers js:babel/register",
     "autotest": "cd src/; mocha --compilers js:babel/register --watch"
-
   },
   "keywords": [
     "es6"
@@ -25,6 +20,7 @@
   "devDependencies": {
     "babel": "^4.6.1",
     "chai": "^1.10.0",
-    "mocha": "^2.1.0"
+    "mocha": "^2.1.0",
+    "rimraf": "^2.2.8"
   }
 }
