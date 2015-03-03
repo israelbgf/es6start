@@ -1,7 +1,7 @@
 {
-  "name": "es6skeleton",
+  "name": "es6start",
   "version": "1.0.0",
-  "description": "Skeleton for an ES6 application.",
+  "description": "A starting point for creating ES6 applications with Babel/Node.js",
   "scripts": {
     "clean": "rimraf dist/",
     "build": "babel src --out-dir dist --optional runtime",
