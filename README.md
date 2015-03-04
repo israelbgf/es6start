@@ -23,5 +23,5 @@ Finally to run your your applications use `./node_modules/.bin/node-babel <file.
 
 - [Mocha.js](http://mochajs.org/) the solid testing framework
 - [Chai.js](http://chaijs.com/) the nice looking assertion Framework
-- [Babel](https://babeljs.io/)the incredible ES6 to ES5 transpiler
+- [Babel](https://babeljs.io/) the incredible ES6 to ES5 transpiler
 - [es6features](https://github.com/lukehoban/es6features) the inspirational overview of ES6 features
