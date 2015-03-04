@@ -1,6 +1,6 @@
 # es6start
 
-For newcomers that want to test ES6 features, it's a bit cumbersome to make a full working setup (but in the end it's actually easy). This project aims to give a pre-built start to play with the ES6 features, and even have a test suite showing the main features of the ES6.
+For newcomers that want to test ES6 features, it's a bit cumbersome to create a full working setup (but in the end it's actually easy). This project aims to give a pre-built start to play with the ES6 features, also with a test suite showing the main features of ES6.
 
 ## Features
 
